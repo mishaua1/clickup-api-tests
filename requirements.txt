@@ -3,3 +3,5 @@ requests==2.32.3
 Faker==30.0.0
 pytest-steps==1.8.0
 python-dotenv==1.0.1
+pytest-html
+
