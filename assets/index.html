@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Test Report</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Test Report</h1>
+  <p>Started: {{ report.started }}</p>
+  <p>Ended: {{ report.ended }}</p>
+  <p>Total run time: {{ report.duration }}</p>
+
+  <ul>
+    {% for test in tests %}
+    <li>{{ test.nodeid }} - {{ test.outcome }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
